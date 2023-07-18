@@ -11,14 +11,13 @@ public class PigDice {
 		System.out.println("Score for turn: "+currTurnScore);
 		System.out.println("Total score: "+totalScore);
 	}
-
-	public static void main(String[] args) {
-		
-		int die=0, turn=1, min=1, max=6, currTurnScore=0, prevTurnScore=0;
+	
+	public static void rollDice(Scanner scanner) 
+	{
+		int turn=1, min=1, max=6;
+		int currTurnScore=0, prevTurnScore=0, die=0;
 		char ch;
-		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("TURN "+turn);
 		while(true)
 		{
 			System.out.print("Roll or hold? (r/h): ");
@@ -58,6 +57,12 @@ public class PigDice {
 				System.out.println("\nTURN "+turn);
 			}
 		}
+	}
+
+	public static void main(String[] args) {
 		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("TURN 1");
+		rollDice(scanner);
 	}
 }
