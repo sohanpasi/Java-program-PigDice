@@ -18,7 +18,7 @@ public class PigDice {
 		int currTurnScore=0, prevTurnScore=0, die=0;
 		char ch;
 		
-		while(true)
+		while(true) 
 		{
 			System.out.print("Roll or hold? (r/h): ");
 			ch = scanner.next().charAt(0);
